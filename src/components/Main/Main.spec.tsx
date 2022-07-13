@@ -34,6 +34,7 @@ describe('Sei nn', () => {
             payload: ''
         })
 
+        //@ts-ignore
         useAppDispatchMocked.mockReturnValue(useAppDispatch)
 
         render(
@@ -59,7 +60,8 @@ describe('Sei nn', () => {
             description: 'some description',
             id: 53,
             name: 'Iair',
-            price: 100000
+            price: 100000,
+            img: 'any'
         }]
 
         useAppSelectorMocked.mockReturnValue({
@@ -72,6 +74,7 @@ describe('Sei nn', () => {
             payload: ''
         })
 
+        //@ts-ignore
         useAppDispatchMocked.mockReturnValue(useAppDispatch)
 
         render(
