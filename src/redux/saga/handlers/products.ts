@@ -16,6 +16,7 @@ interface getProductsPayload {
 
 export function* handleGetProducts(action: PayloadAction<getProductsPayload>) {
     try {
+        //@ts-ignore
         const response = yield call(fetchProducts, action.payload)
 
         const { data } = response;
